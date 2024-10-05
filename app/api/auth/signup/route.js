@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import dbConnect from '../../../../lib/mongodb';
 import User from '../../../../models/User';
-import { createToken } from '../../../../utils/jwt';
+import { createToken } from '../../../../ecommerce/utils/jwt';
 import { cookies } from 'next/headers';
 
 export async function POST(request) {

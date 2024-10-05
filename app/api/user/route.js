@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 import dbConnect from '../../../lib/mongodb';
 import User from '../../../models/User';
-import { verifyToken } from '../../../utils/jwt';
+import { verifyToken } from '../../../ecommerce/utils/jwt';
 
 export async function GET() {
   await dbConnect();
